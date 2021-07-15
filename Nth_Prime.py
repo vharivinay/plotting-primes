@@ -49,7 +49,7 @@ def nth_prime(n):
 
 
 ## Running the functions here
-num = 100000 ##-----> INPUT HERE
+num = 500000##-----> INPUT HERE
 
 tic = time.perf_counter()
 primes = nth_prime(num)
@@ -63,7 +63,7 @@ n = len(primes)
 ## Visualization
 f = plt.figure(figsize=(10,10))
 plt.subplot(111,polar = True)
-ax1 = plt.scatter(primes,primes, s = 0.05)
+ax1 = plt.scatter(primes,primes, s = 0.001)
 plt.title(str(n)+' Primes', fontsize=36)
 plt.axis('off')
 plt.show()
